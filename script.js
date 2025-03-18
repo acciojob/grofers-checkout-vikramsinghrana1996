@@ -28,6 +28,7 @@ const getSum = () => {
     totalCell.setAttribute("colspan", "2");
     totalCell.style.fontWeight = "bold";
     totalCell.style.textAlign = "center";
+    totalCell.id = "ans";  // Add this ID so Cypress can find it
     totalCell.textContent = `Total Price: Rs ${total}`;
 
     // Append cell to row and row to table
